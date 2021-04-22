@@ -7,7 +7,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateCacheModule, TranslateCacheSettings, TranslateCacheService } from 'ngx-translate-cache';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-// import { TranslationModule  } from './translation/translation.module';
+import { TraductionModule } from './traduction/traduction.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    }) 
+    }),
+    TraductionModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
