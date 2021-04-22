@@ -1,0 +1,12 @@
+{
+    "Sitetitle": "Site Angular Multi Lange",
+    "Name": "Nom",
+    "NameError": "Vous avez surement un nom",
+    "Email": "Address Email",
+    "PhoneNo": "Numero de Telephone",
+    "Password": "Mot de Passe",
+    "Bio": "Entrer votre Biographie",
+    "TermsConditions": "J'accepte les termes et conditions",
+    "Submit": "Enregistrer",
+    "title":"Ce site est pour des besoins de teste"
+}
