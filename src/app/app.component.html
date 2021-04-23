@@ -62,7 +62,11 @@
     </form>
   </div>
   <div class="col-md-6 col-lg-6 col-sm-12">
-    <h3 class="text-center">{{'title' | translate}}</h3>
+    {{myDate|date:'shortDate'}}
+    <h2 i18n="greeting|message appears for new users of the application">
+      Welcome! 
+    </h2>
+    <h4 class="text-center">{{'title' | translate}}</h4>
   </div>
 </div>
 </div>

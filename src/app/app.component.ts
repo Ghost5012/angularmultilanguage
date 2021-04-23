@@ -11,6 +11,7 @@ export class AppComponent {
     translate.addLangs(['en', 'nl','fr']);
     translate.setDefaultLang('en');
   }
+  myDate=Date.now();
   switchLang(lang: string) {
   	this.translate.use(lang);
 	}

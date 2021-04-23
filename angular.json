@@ -18,7 +18,11 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "outputPath": "dist/angularmultilanguage/en-GB",
+            "i18nLocale": "en-GB",
+            "deployUrl": "/en-GB/",
+            "baseHref": "/en-GB/",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -58,6 +62,22 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ru": {
+              "aot": true,
+              "outputPath": "dist/my-project-ru/",
+              "i18nFile": "src/locale/messages.ru.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ru",
+              "i18nMissingTranslation": "error"
+            },
+            "ar-IQ": {
+              "baseHref": "/ar-IQ/",
+              "deployUrl": "/ar-IQ/",
+              "outputPath": "dist/my-project-ar/",
+              "i18nFile": "src/locale/messages.ar-IQ.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ar-IQ"
             }
           }
         },
@@ -69,6 +89,13 @@
           "configurations": {
             "production": {
               "browserTarget": "angularmultilanguage:build:production"
+            },
+            "ru": {
+              "browserTarget": "angularmultilanguage:build:ru"
+            },
+            "ar-IQ": {
+              "browserTarget": "angularmultilanguage:build:ar-IQ",
+              "servePath": "/ar-IQ/"
             }
           }
         },
